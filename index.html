@@ -1,37 +1,116 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minh Sơn 12A4</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7fe0c3">
+  <meta name="description" content="Trang giới thiệu bản thân của Nguyễn Duy Minh Sơn - học sinh lớp 12A4 Trường THPT Hòn Gai.">
+  <title>Minh Sơn 12A4</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Mulish:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
-    <h1 align="center"><font color="crimson" face="Verdana">GIỚI THIỆU VỀ BẢN THÂN</font></h1>
-    <h2 align="center"><font color="" face="Tahoma">Trang web này chứa các thông tin thú vị về mình, hãy cùng nhau khám phá nhé!</font></h2>
-    <h2><font color="Teal" face="Tahoma">I. Một số thông tin cơ bản</font><img width="300" align="right" src="son.jpg"></h2>
-    <p><font size="4" color="" face="Tahoma">- Mình tên là Nguyễn Duy Minh Sơn, 17 tuổi. Hiện tại mình đang là học sinh lớp 12A4 của Trường THPT Hòn Gai. </font> </p>
-    <p><font size="4" color="" face="Tahoma">- Mình sinh ngày 02/11/2009, lớn lên tại Vùng Đất Mỏ Quảng Ninh.</font></p>
-    <h2><font color="Royal Blue" face="Tahoma">II. Sở thích của mình</font></h2>
-    <ul style="list-style-type: disc;">
-        <li><font size="4" color="" face="Tahoma">Chơi piano</font></li>
-        <li><font size="4" color="" face="Tahoma">Đánh cầu lông</font></li>
-        <li><font size="4" color="" face="Tahoma">Nghe nhạc, xem phim</font></li>
-    </ul>
-    <h2><font color="Brown" face="Tahoma">III. Các trường đại học mơ ước</font></h2>
-    <ol type="1">
-        <li><font size="4" color="" face="Tahoma">Trường Đại học Kinh Tế Quốc Dân (NEU)</font></li>
-        <li><font size="4" color="" face="Tahoma">Trường Đại học Bách Khoa Hà Nội (HUST)</font></li>
-        <li><font size="4" color="" face="Tahoma">Trường Đại học Sư phạm Hà Nội (HNUE)</font></li>
-    </ol>
-    <p><font size="4" color="" face="Tahoma">- Dưới đây là một video ngắn giới thiệu về Trường Đại học Kinh Tế Quốc Dân trên nền tảng youtube</font></p>
-    <video width="600" controls>
-            <source src="neu.mp4"
-                    type="video/mp4">
-    </video>
-    <h2><font color="#191970"face="Tahoma">IV.Kết nối với mình</font></h2>
-    <p><img width="100" src="zalo.jpg" width="150"><font size="5" color="#006400" face="Tahoma">: 0398678794</font></p>
-    <a href="https://www.facebook.com/nguyen.son.12315" target="_blank">
-    <img width="100" src="fb.png" width="150">
-</a>
+
+  <div class="keys" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="grid">
+
+      <!-- Dải hồ sơ nằm ngang -->
+      <header class="card hero">
+        <img class="avatar" src="son.jpg" alt="Ảnh Nguyễn Duy Minh Sơn">
+        <div class="hero__text reveal">
+          <span class="eyebrow">Giới thiệu về bản thân</span>
+          <h1>Nguyễn Duy Minh Sơn</h1>
+          <p class="hero__sub">Lớp 12A4 · Trường THPT Hòn Gai</p>
+
+          <div class="stats">
+            <div class="stat"><b>17</b><small>tuổi</small></div>
+            <div class="stat"><b>02/11</b><small>2009</small></div>
+            <div class="stat"><b>12A4</b><small>lớp</small></div>
+          </div>
+
+          <p class="bio"><span>Trang web này chứa các thông tin thú vị về mình,</span> <span>hãy cùng nhau khám phá nhé!</span></p>
+
+          <nav class="chips" aria-label="Các phần của trang">
+            <a href="#thong-tin">Thông tin</a>
+            <a href="#so-thich">Sở thích</a>
+            <a href="#dai-hoc">Đại học</a>
+            <a href="#ket-noi">Kết nối</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hàng 2: ba thẻ bằng nhau -->
+      <section class="card t-info reveal" id="thong-tin">
+        <h2><span class="no">I</span>Một số thông tin cơ bản</h2>
+        <ul class="rows">
+          <li><small>Họ và tên</small><strong>Nguyễn Duy Minh Sơn</strong></li>
+          <li><small>Tuổi</small><strong>17 tuổi</strong></li>
+          <li><small>Đang học</small><strong>Lớp 12A4 · THPT Hòn Gai</strong></li>
+          <li><small>Ngày sinh</small><strong>02/11/2009</strong></li>
+          <li><small>Nơi lớn lên</small><strong>Vùng đất mỏ Quảng Ninh</strong></li>
+        </ul>
+      </section>
+
+      <section class="card t-hob reveal" id="so-thich">
+        <h2><span class="no">II</span>Sở thích của mình</h2>
+        <div class="stories">
+          <div class="story"><span>🎹</span>Chơi piano</div>
+          <div class="story"><span>🏸</span>Đánh cầu lông</div>
+          <div class="story"><span>🎧</span>Nghe nhạc, xem phim</div>
+        </div>
+      </section>
+
+      <section class="card t-uni reveal" id="dai-hoc">
+        <h2><span class="no">III</span>Các trường đại học mơ ước</h2>
+        <ol class="unis">
+          <li><span class="code">NEU</span>Trường Đại học Kinh tế Quốc dân</li>
+          <li><span class="code">HUST</span>Trường Đại học Bách khoa Hà Nội</li>
+          <li><span class="code">HNUE</span>Trường Đại học Sư phạm Hà Nội</li>
+        </ol>
+      </section>
+
+      <!-- Hàng 3: hai thẻ bằng nhau -->
+      <section class="card t-video reveal" id="video">
+        <h2><span class="no">▶</span>Video giới thiệu về NEU</h2>
+        <figure>
+          <video controls preload="metadata" src="neu.mp4">Trình duyệt của bạn không hỗ trợ video.</video>
+          <figcaption>Video ngắn giới thiệu về Trường Đại học Kinh tế Quốc dân</figcaption>
+        </figure>
+      </section>
+
+      <section class="card t-contact reveal" id="ket-noi">
+        <h2><span class="no">IV</span>Kết nối với mình</h2>
+        <div class="links">
+          <a class="link" href="https://zalo.me/0398678794" target="_blank" rel="noopener">
+            <img src="zalo.jpg" alt="Zalo"><span><b>Zalo</b><small>0398678794</small></span>
+          </a>
+          <a class="link" href="https://www.facebook.com/nguyen.son.12315" target="_blank" rel="noopener">
+            <img src="fb.png" alt="Facebook"><span><b>Facebook</b><small>nguyen.son.12315</small></span>
+          </a>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>© 2026 Nguyễn Duy Minh Sơn · Cảm ơn bạn đã ghé thăm! 🎶</footer>
+  </div>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+  </script>
 </body>
 </html>
